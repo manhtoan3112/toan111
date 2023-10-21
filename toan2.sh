@@ -13,7 +13,7 @@ tmux send-keys -t gpuminer:0.0 'python3 miner.py --gpu=true' C-m
 sleep 3
 
 # Run the GPU miner command in the bottom pane (pane 1)
-tmux send-keys -t gpuminer:0.1 './xengpuminer -b 128' C-m
+tmux send-keys -t gpuminer:0.1 './xengpuminer -b 160' C-m
 
 # Finally, attach to the tmux session
 tmux attach -t gpuminer
