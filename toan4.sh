@@ -1,0 +1,1 @@
+tmux new-session -d -s gpuminer && tmux split-window -v && tmux send-keys -t gpuminer:0.0 'python3 miner.py --gpu=true' C-m && sleep 3 && tmux send-keys -t && gpuminer:0.1 './xengpuminer -b 128' C-m && tmux attach -t gpuminer
