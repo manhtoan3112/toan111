@@ -1,16 +1,3 @@
-#@title  إِنَّ اللَّهَ مَعَ الصَّابِرِينَ
-from IPython.display import HTML
-from subprocess import getoutput
-s = getoutput('nvidia-smi -L')
-if 'T4' in s:
-  gpu = 'T4'
-elif 'P100' in s:
-  gpu = 'P100'
-elif 'V100' in s:
-  gpu = 'V100'
-display(HTML(f"<h2>{gpu}</h2>"))
-print(s)
-
 #@title MENANG GADANG AINGTEH!!!!
 import apt, apt.debfile
 import pathlib, stat, shutil, urllib.request, subprocess, getpass, time, tempfile
